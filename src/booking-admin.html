@@ -1,0 +1,98 @@
+<!--
+/* 
+Code by Lisa Bäcklin, Mittuniversitetet
+Email: liba2103@student.miun.se
+*/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Admin - bokningar</title>
+</head>
+
+<body>
+    <header>
+        <h1>Admin - Hantera bokningar</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.php">ÄNDRA MENYN</a></li>
+                <li><a href="booking-admin.html">HANTERA BOKNINGAR</a></li>
+                <li> <a href="admin.php?logout">LOGGA UT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Bokade bord</h2>
+        <p>Klicka i den kolumn du vill ändra för att ändra. Spara detta genom att klicka på "ändra"-knappen.</p>
+
+        <!--Skriver ut bokningar-->
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Namn</th>
+                        <th>Tid</th>
+                        <th>Datum</th>
+                        <th>Antal</th>
+                        <th>Ändra</th>
+                        <th>Radera</th>
+                    </tr>
+                </thead>
+                <tbody id="bookinglist">
+
+                </tbody>
+            </table>
+        </div>
+        <h2>Skapa ny bokning</h2>
+        <!--Skriver ut meddelande-->
+        <div class="message">
+            <span id="message"></span>
+        </div>
+        <!--Formulär för att lägga till kurs-->
+        <div class="row">
+            <div class="column">
+                <form id="bookform">
+
+                    <label for="name">Namn:</label>
+                    <br>
+                    <input type="text" name="name" id="name">
+                    <br>
+
+                    <label for="date">Datum</label>
+                    <br>
+                    <input type="date" name="date" id="date">
+                </form>
+            </div>
+            <div class="column">
+                <label for="time">Tid</label>
+                <br>
+                <input type="time" name="time" id="time">
+                <br>
+              
+                <label for="quantity">Antal gäster</label><br>
+                <select name="quantity" id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <br>
+            </div>
+        </div>
+        <div class="button">
+            <input type="button" value="Boka bord" id="submit">
+        </div>
+    </div>
+    <!--Container end-->
+    <script src="js/booking-admin.js"></script>
+</body>
+
+</html>

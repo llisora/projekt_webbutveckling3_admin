@@ -1,0 +1,207 @@
+/*Jag fick göra om denna css från sass, därför den ser lite konstig ut.*/
+
+/*Lista/meny*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1
+}
+
+ul li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+li a:hover {
+    background-color: #555;
+    color: #fff
+}
+
+/*Button*/
+
+.container .button {
+    margin: auto;
+    text-align: center
+}
+
+.container .button #submit {
+    background-color: #ff5093;
+    border: none;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 200px;
+    cursor: pointer
+}
+
+.container .button #submit:hover {
+    background-color: #50ffbc;
+    text-decoration: underline;
+    color: #000;
+}
+
+/*Message*/
+#message {
+    color: red;
+    font-size: 18px;
+}
+
+.message {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+/*Container*/
+.container {
+    display: block
+}
+
+.container p {
+    text-align: center
+}
+
+/*Två kolumner med flexbox*/
+.container .row {
+    display: flex;
+    text-align: center
+}
+
+.container .row .column {
+    flex: 50%
+}
+
+/*Input fields*/
+.container input {
+    width: 60%
+}
+
+.container input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box
+}
+
+.container input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box
+}
+
+.container input[type=password] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box
+}
+
+.container input[type=time] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box
+}
+
+.container input[type=date] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box
+}
+
+/*Selectbox*/
+.container select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    width: 60%
+}
+
+/*Tabell*/
+.container .table {
+    overflow-x: auto
+}
+
+.container .table h3 {
+    text-align: center
+}
+
+.container table {
+    width: 100%
+}
+
+.container table td {
+    text-align: left
+}
+
+.container table th, .container table td {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 10px
+}
+
+.container table tr:hover {
+    background-color: #ff5093
+}
+
+.container h2 {
+    text-align: center
+}
+
+/*Submitknapp*/
+.container .button {
+    margin: auto;
+    text-align: center
+}
+
+.container .button #submit {
+    background-color: #ff5093;
+    border: none;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 200px;
+    cursor: pointer
+}
+
+.container .button #submit:hover {
+    background-color: #50ffbc;
+    text-decoration: underline;
+    color: #000
+}
+
+/*Loginsida*/
+.login {
+    margin: auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logintext {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.btn {
+    background-color: #8aaee4;
+    border: none;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 200px;
+    cursor: pointer
+}
+
+/*Telefonläge*/
+@media only screen and (min-width: 300px)and (max-width: 600px) {
+    .container .row {
+        display: block;
+        text-align: center
+    }
+}
