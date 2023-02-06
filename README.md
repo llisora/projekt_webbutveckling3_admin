@@ -1,5 +1,8 @@
 # projekt_admin_vt22-llisora
-projekt_admin_vt22-llisora created by GitHub Classroom
+Webblänk till admin
+https://studenter.miun.se/~liba2103/writeable/webb3/projekt/admin/admin.php
+Anv.namn: miun123
+Lösen: miun123
 
 Detta repository är del 2 av 3 i för projektuppgiften i kursen Webbutveckling III.
 
